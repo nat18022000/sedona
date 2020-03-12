@@ -27,9 +27,66 @@
       </nav>
     </header>
     <main class="page-content">
-      <div class="filter">
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура:</legend>
+            <ul class="infrastructure-list">
+              <li class="infrastructure-item">
+                <input type="checkbox" name="pool" id="pool" >
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="infrastructure-list">
+                <input type="checkbox" name="parking" id="parking" >
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="infrastructure-list">
+                <input type="checkbox" name="wi-fi" id="wi-fi" >
+                <label for="wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="house">
+            <legend>Тип жилья:</legend>
+            <ul class="house-list">
+              <li class="house-item">
+                <input type="checkbox" name="hotel" id="hotel">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="house-item">
+                <input type="checkbox" name="motel" id="motel">
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="house-item">
+                <input type="checkbox" name="apartments" id="apartments">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="cost">
+            <legend>Стоимость в сутки (p):</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <!--style="margin-left: 20%; width: 30%"  -->
+                 <div class="bar" ></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="number" value="3000"></label>
+              </div>
+            </div>
+          </fieldset>
+          <button class="button-show">Показать</button>
 
-      </div>
+        </form>
+
+
+      </section>
       <section class="hotels">
         <div class="hotels-item">
           <img src="img/amara.jpg" alt="Гостиница Amara" width="135" height="90">
